@@ -26,7 +26,7 @@ WebSocketClient::WebSocketClient(Client& aClient, const IPAddress& aServerAddres
 {
 }
 
-int WebSocketClient::begin(const char* aPath, char* (*additionalHeaders)[2], size_t headerRows)
+int WebSocketClient::begin(const char* aPath, const char* (*additionalHeaders)[2], size_t headerRows)
 {
     // start the GET request
     beginRequest();

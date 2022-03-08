@@ -28,7 +28,7 @@ public:
       @param headerRows  amount of rows in additionalHeaders array
       @return 0 if successful, else error
      */
-    int begin(const char* aPath, char* (*additionalHeaders)[2], size_t headerRows);
+    int begin(const char* aPath, const char* (*additionalHeaders)[2], size_t headerRows);
     /** Start the Web Socket connection to the specified path
       @param aURLPath     Path to use in request (optional, "/" is used by default)
       @return 0 if successful, else error
